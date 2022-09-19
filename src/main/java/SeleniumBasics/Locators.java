@@ -12,33 +12,31 @@ public class Locators {
 	 * Locators are the mechanism by which we locate or find the element on the web page
 	 * Locators available in Selenium
 	 * 
-	 * For Elements
-	 * ID - 1
-	 * Name - 2
-	 * CSS : #HTMLFormElements > table > tbody > tr:nth-child(1) > td > input[type=text] - 3
-	 * XPATH (Absolute and Relative) - 3
-	 * //*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
-	 * /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
+	 * For Elements ID - 1 Name - 2 CSS : #HTMLFormElements > table > tbody >
+	 * tr:nth-child(1) > td > input[type=text] - 3 XPATH (Absolute and Relative) - 3
+	 * //*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/
+	 * input
+	 * /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/
+	 * input
 	 * 
 	 * TAG: can be used if we want to get all the elements of a specific type or tag
 	 * class: we can not reply on class
 	 * 
-	 * For Links
-	 * linkText - exact match
-	 * partialLinkText - works on partial match
+	 * For Links linkText - exact match partialLinkText - works on partial match
 	 * 
-	 * by.Linktext(Abo)
-	 * by.partiallinktext(Abo)
+	 * by.Linktext(Abo) by.partiallinktext(Abo)
 	 * 
 	 */
-	
-	public static void main(String[] args) {
+
+	public static void main(String[] args) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		driver.findElement(By.xpath("//input[@name = 'username']")).sendKeys("Admin");
-		driver.findElement(By.xpath("//input[@name = 'password']")).sendKeys("admin123");
-		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		driver.get("https://facebook.com");
+		//driver.findElement(By.cssSelector("#email")).sendKeys("TestEmail@gmail.com");
+		driver.findElement(By.xpath("//*[@id=\"pass\"]"));
+		Thread.sleep(3000);
+		driver.close();
+		
 		
 		
 	}
