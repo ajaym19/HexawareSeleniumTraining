@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HexawareApplicationTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Common(failed)">
+    <parameter name="password" value="admin@123"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="username" value="admin"/>
+    <groups>
+      <run>
+        <include name="parameters"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.ParametrizedTC">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testcases.ParametrizedTC -->
+    </classes>
+  </test> <!-- Common(failed) -->
+</suite> <!-- Failed suite [HexawareApplicationTest] -->

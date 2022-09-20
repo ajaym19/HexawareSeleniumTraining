@@ -1,0 +1,22 @@
+TestNG
+it is a testing tool
+Test Next Generation
+
+Features:
+1. Various Annotations
+2. HTML Report
+3. Priority/Sequencing
+4. Dependency
+5. Grouping of TC's
+6. Invocation Times
+7. Data Provider
+8. Assertions
+9. TestNG XML File
+
+Steps:
+1. Downloaded in eclipse using Install New Software
+2. Added the TestNG dependency in Maven pom.xml file
+
+
+Best Practices:
+1. TC should be independent

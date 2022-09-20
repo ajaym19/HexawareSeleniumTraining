@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HexawareApplicationTest">
+	<groups>
+		<run>
+			<include name="parameters" />
+		</run>
+	</groups>
+	<test thread-count="5" name="Common">
+		<parameter name="username" value="admin" />
+		<parameter name="password" value="admin@123" />
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="testcases.AssertionsDemo" />
+			<class name="testcases.InvocationDemo" />
+			<class name="testcases.DependsOnDemo" />
+			<class name="testcases.TestNGBasicAnnotations" />
+			<class name="testcases.ParametrizedTC" />
+		</classes>
+	</test> <!-- Common -->
+
+	<test name="MobileTesting">
+		<classes>
+			<class name="mobileTC.MobileLogin" />
+		</classes>
+	</test>
+
+	<test name="WebTesting">
+		<classes>
+			<class name="webTC.WebLogin" />
+		</classes>
+	</test>
+
+</suite> <!-- HexawareApplicationTest -->
