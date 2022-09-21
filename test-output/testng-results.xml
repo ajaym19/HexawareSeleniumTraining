@@ -1,41 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="20" total="21" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-21T02:01:54 IST" name="HexawareApplicationTest" finished-at="2022-09-21T02:02:00 IST" duration-ms="6249">
+  <suite started-at="2022-09-22T00:34:48 IST" name="Suite" finished-at="2022-09-22T00:34:48 IST" duration-ms="111">
     <groups>
-      <group name="parameters">
-        <method signature="ParametrizedTC.loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.ParametrizedTC@1c7696c6]" name="loginTest" class="testcases.ParametrizedTC"/>
-      </group> <!-- parameters -->
+      <group name="thread">
+        <method signature="MultiThreadedTC.TC1()[pri:0, instance:testcases.MultiThreadedTC@614ca7df]" name="TC1" class="testcases.MultiThreadedTC"/>
+        <method signature="MultiThreadedTC.TC2()[pri:0, instance:testcases.MultiThreadedTC@614ca7df]" name="TC2" class="testcases.MultiThreadedTC"/>
+        <method signature="MultiThreadedTC.TC3()[pri:0, instance:testcases.MultiThreadedTC@614ca7df]" name="TC3" class="testcases.MultiThreadedTC"/>
+        <method signature="MultiThreadedTC.TC4()[pri:0, instance:testcases.MultiThreadedTC@614ca7df]" name="TC4" class="testcases.MultiThreadedTC"/>
+      </group> <!-- thread -->
     </groups>
-    <test started-at="2022-09-21T02:01:54 IST" name="Common" finished-at="2022-09-21T02:02:00 IST" duration-ms="6213">
-      <class name="testcases.ParametrizedTC">
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.ParametrizedTC@1c7696c6]" started-at="2022-09-21T02:01:54 IST" name="loginTest" finished-at="2022-09-21T02:02:00 IST" duration-ms="6151" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-09-22T00:34:48 IST" name="Test" finished-at="2022-09-22T00:34:48 IST" duration-ms="111">
+      <class name="testcases.MultiThreadedTC">
+        <test-method signature="TC2()[pri:0, instance:testcases.MultiThreadedTC@614ca7df]" started-at="2022-09-22T00:34:48 IST" name="TC2" finished-at="2022-09-22T00:34:48 IST" duration-ms="52" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- testcases.ParametrizedTC -->
-    </test> <!-- Common -->
-    <test started-at="2022-09-21T02:02:00 IST" name="MobileTesting" finished-at="2022-09-21T02:02:00 IST" duration-ms="3">
-    </test> <!-- MobileTesting -->
-    <test started-at="2022-09-21T02:02:00 IST" name="WebTesting" finished-at="2022-09-21T02:02:00 IST" duration-ms="2">
-    </test> <!-- WebTesting -->
-  </suite> <!-- HexawareApplicationTest -->
+        </test-method> <!-- TC2 -->
+        <test-method signature="TC3()[pri:0, instance:testcases.MultiThreadedTC@614ca7df]" started-at="2022-09-22T00:34:48 IST" name="TC3" finished-at="2022-09-22T00:34:48 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3 -->
+        <test-method signature="TC4()[pri:0, instance:testcases.MultiThreadedTC@614ca7df]" started-at="2022-09-22T00:34:48 IST" name="TC4" finished-at="2022-09-22T00:34:48 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4 -->
+        <test-method signature="TC1()[pri:0, instance:testcases.MultiThreadedTC@614ca7df]" started-at="2022-09-22T00:34:48 IST" name="TC1" finished-at="2022-09-22T00:34:48 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+      </class> <!-- testcases.MultiThreadedTC -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -5,17 +5,23 @@
     <parameter name="password" value="admin@123"/>
     <parameter name="browser" value="Chrome"/>
     <parameter name="username" value="admin"/>
-    <groups>
-      <run>
-        <include name="parameters"/>
-      </run>
-    </groups>
     <classes>
-      <class name="testcases.ParametrizedTC">
+      <class name="testcases.DependsOnDemo">
         <methods>
-          <include name="loginTest" invocation-numbers="0"/>
+          <include name="validateEditUserTC"/>
+          <include name="validateDeleteUserTC"/>
+          <include name="validateCreateUserTC"/>
+          <include name="loginTC"/>
         </methods>
-      </class> <!-- testcases.ParametrizedTC -->
+      </class> <!-- testcases.DependsOnDemo -->
+      <class name="testcases.AssertionsDemo">
+        <methods>
+          <include name="validateCreateNewAccountButtonPresent"/>
+          <include name="validateTitle"/>
+          <include name="closeSetup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.AssertionsDemo -->
     </classes>
   </test> <!-- Common(failed) -->
 </suite> <!-- Failed suite [HexawareApplicationTest] -->
