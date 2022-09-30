@@ -1,0 +1,16 @@
+Cucumber
+
+BDD framework >> first we write feature and then we write the code
+
+TDD >> Test Driven Development (first we write TC and then we write the code)
+
+scenarios using gherkin language
+
+gherkin is a simple plain english type language with few keywords
+
+
+BDD is also known as GWT >> Given When Then
+
+Given: pre conditions, what should already be present so that I start my actions
+When: what actions user needs to perform
+Then: what should be the result of those actions	
